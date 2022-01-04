@@ -1,13 +1,13 @@
-import React from 'react'
-import ComponentTwo from './componentTwo'
+import React, { useContext } from 'react'       //Importamos useContext.
+import { Context } from '../context/context'    //Importamos el contexto creado en context.jsx
+import ComponentTwo from './ComponentTwo'
 
-function componentOne({ name }) {
+export default function ComponentOne() {
+    const { name } = useContext(Context)    //Desestructuramos lo necesario y lo utilizamos.
     return (
-        <div style={{backgroundColor:'white', height:'200px', padding:'20px'}} >
-            <p>COMPONENTE ONE</p>
-            <ComponentTwo name={name} />
+        <div>
+            <p>PROBANDO REACT CONTEXT. { name } </p>
+            <ComponentTwo />
         </div>
     )
 }
-
-export default componentOne

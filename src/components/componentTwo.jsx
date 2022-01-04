@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { Context } from '../context/context'
 
-export default function componentTwo({name}) {
+export default function ComponentTwo() {
+    const { name } = useContext(Context)
     return (
-        <div style={{backgroundColor:'green'}}>
-            ESTE ES EL COMPONENTE DOS: {name}
+        <div>
+            <p>Y AQUÍ USAMOS DE VUELTA EL CONTEXT: { name }</p>
         </div>
     )
 }
