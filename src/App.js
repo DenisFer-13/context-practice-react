@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import React from 'react'
+import ComponentOne from './components/componentOne';
 import './App.css';
 
+
 function App() {
+  const name = 'Denis'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: 'red', height: '400px', padding: '40px' }}>
+      <p>COMPONENTE APP</p>
+      <ComponentOne name={name} />
     </div>
-  );
+  )
 }
 
 export default App;
