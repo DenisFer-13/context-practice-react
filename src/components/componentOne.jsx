@@ -4,10 +4,10 @@ import ComponentTwo from './ComponentTwo'
 import style from '../styles/ComponentOne.module.css';
 
 export default function ComponentOne() {
-    const { name } = useContext(Context)    //Desestructuramos lo necesario y lo utilizamos.
+    const { state } = useContext(Context)    //Desestructuramos lo necesario y lo utilizamos.
     return (
         <div className={style.div}>
-            <p>PROBANDO REACT CONTEXT. { name } </p>
+            <p>PROBANDO REACT CONTEXT. { state } </p>
             <ComponentTwo />
         </div>
     )
