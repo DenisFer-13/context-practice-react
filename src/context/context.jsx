@@ -1,4 +1,7 @@
-import React, { createContext } from "react";
+const React = require("react");     //Esta es una forma de traer con require a React.
+const { createContext } = React;    //Luego a React le destructuro createContext.
+
+console.log('aquí', React);         //De hecho en este console.log podemos ver las cosas que tiene React.
 
 export const Context = createContext();     //Exportamos el contexto, creado con createContext.
 
