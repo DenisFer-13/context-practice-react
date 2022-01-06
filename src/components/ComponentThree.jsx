@@ -7,6 +7,7 @@ export default function ComponentThree() {
     <div>
       ESTE COMPONENTE EDITARÁ EL ESTADO.
       <button
+        class="btn btn-primary"
         onClick={() => {
           setState("Orlando & Marcela");
         }}
